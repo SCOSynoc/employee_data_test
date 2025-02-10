@@ -99,6 +99,7 @@ DateTime getSelectedTime(String chip, DateTime date){
     case "After 1 week":
             DateTime newdate = DateTime.now();
             newdate =date.add(const Duration(days: 7));
+            print("After 1 week is ${newdate}");
             return newdate;
     case "Today": DateTime newdate = DateTime.now();
          return newdate;

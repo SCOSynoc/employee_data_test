@@ -14,7 +14,7 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     return Text(text, style: GoogleFonts.roboto(fontSize: fontSize, fontWeight: wtg , color: color,  ),
-      textScaler: TextScaler.linear(width <= 320 ? 0.7: width <= 344 ? 0.75 :0.9), );
+      textScaler: TextScaler.linear(width <= 320 ? 0.7: width <= 344 ? 0.75 :0.88), );
   }
 }
 

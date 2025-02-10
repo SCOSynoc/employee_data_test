@@ -63,6 +63,7 @@ class _TableCalendarCardState extends State<TableCalendarCard> {
                               }
                           }
                          focusedChipDate = getSelectedTime(widget.list[index]["name"], today);
+                          today = focusedChipDate;
                           chip = widget.list[index]["name"];
                         });
                     },

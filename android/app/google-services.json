@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "360139610332",
+    "project_id": "employeedatatest-bb262",
+    "storage_bucket": "employeedatatest-bb262.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360139610332:android:205136421e26a905fe3c19",
+        "android_client_info": {
+          "package_name": "com.example.employee_data_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApFM_hpDphH2xvGG9vernZ0vzsfY3_rY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

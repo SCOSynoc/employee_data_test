@@ -79,9 +79,9 @@ DateTime getSelectedTime(String chip, DateTime date){
     case "Next Tuesday" : DateTime newdate = DateTime.now();
           for(int i = 0; i < 7 ; i++){
           /*print("here its working $i");*/
-           newdate =date.add(Duration(days: i));
+           newdate =date.add(Duration(days: i+1));
           if(newdate.weekday == 2){
-           /* print("yeah its tuesday ${newdate}");*/
+            /*print("yeah its tuesday ${newdate}");*/
             break;
           }
         }
@@ -89,9 +89,9 @@ DateTime getSelectedTime(String chip, DateTime date){
     case "Next Monday": DateTime newdate = DateTime.now();
         for(int i = 0; i < 7 ; i++){
           /*print("here its working $i");*/
-          newdate =date.add(Duration(days: i));
+          newdate =date.add(Duration(days: i+1));
           if(newdate.weekday == 1){
-          /*  print("yeah its tuesday ${newdate}");*/
+            /*print("yeah its tuesday ${newdate}");*/
             break;
           }
         }

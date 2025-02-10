@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -10,6 +12,9 @@ class TextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: GoogleFonts.roboto(fontSize: fontSize, fontWeight: wtg , color: color,  ), textScaler: MediaQuery.of(context).textScaler, );
+    final width = MediaQuery.of(context).size.width;
+    return Text(text, style: GoogleFonts.roboto(fontSize: fontSize, fontWeight: wtg , color: color,  ),
+      textScaler: TextScaler.linear(width <= 320 ? 0.7: width <= 344 ? 0.75 :0.9), );
   }
 }
+
